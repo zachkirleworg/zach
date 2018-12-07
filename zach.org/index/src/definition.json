@@ -1,0 +1,31 @@
+{
+  "name" : "index",
+  "title" : "zach.org",
+  "uri" : "zach.org",
+  "userInterface" : {
+    "themeName" : "mediaBlog",
+    "resourcesHost" : "https://bc.marfeelcache.com",
+    "lang" : "en",
+    "features" : {
+      "twisterJavaEnabled" : true,
+      "forceXL" : true,
+      "useInventoryAds" : "remote"
+    }
+  },
+  "configuration" : {
+    "whiteCollarScript" : "index/src/whiteCollar/main.js",
+    "cronRefresh" : "0 1 0 1/1 * ? *"
+  },
+  "sectionDefinitions" : [ {
+    "name" : "home",
+    "styles" : "photo",
+    "title" : "Home",
+    "feedDefinitions" : [ {
+      "uri" : "http://www.zach.org",
+      "alibabaDefinition" : { }
+    } ],
+    "configuration" : {
+      "cronRefresh" : "0 0/3 * 1/1 * ? *"
+    }
+  } ]
+}
